@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                       temp=items[j];
                     items[j]=items[j+1];
                     items[j+1]=temp;
-//0000
+//00000
                 }
 
             }
