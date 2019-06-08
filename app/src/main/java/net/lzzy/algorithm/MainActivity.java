@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 displayItems(edtItems);
                 break;
             case R.id.activity_main_btn_sort:
-                directSort();
+                insertSort();
                 displayItems(tvResult);
                 break;
             default:
@@ -63,11 +63,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     min=items[j];
 
                 }
-             swap(min,i);
+                swap(min,i);
             }
             //--
 
         }
+    }
+    private void insertSort(){
+        //todo:直接插入排序的具体实现
+        for (int i=1;i<items.length;i++){
+            int temp =items[i];
+            int j=i-1;
+            if (items[i-1]<=temp){
+                ///-----------------
+
+            }else {
+                while (items[j]>temp&&j>0){
+                    break;
+                }
+                j--;
+            }
+            for (int t=i;t>j;t--){
+                items[t]=items[t-1];
+
+
+            }
+            items[j]=temp;
+
+        }
+
     }
 
     private void swap(int m, int n) {
