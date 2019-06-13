@@ -71,27 +71,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     private void insertSort(){
         //todo:直接插入排序的具体实现
-        for (int i=1;i<items.length;i++){
-            int temp =items[i];
+        for (int i=1;i<items.length;i++) {
             int j=i-1;
-            if (items[i-1]<=temp){
-                ///-----------------
-
-            }else {
-                while (items[j]>temp&&j>0){
-                    break;
-                }
+            if (items[j].compareTo(items[i])<0){
+                continue;
+            }
+            Integer tmp=items[i];
+            while (j>0&&items[j].compareTo(tmp)>0){
+                items[j+1]=items[j];
                 j--;
             }
-            for (int t=i;t>j;t--){
-                items[t]=items[t-1];
-
-
-            }
-            items[j]=temp;
-
+            items[j+1]=tmp;
         }
-
     }
 
     private void swap(int m, int n) {
