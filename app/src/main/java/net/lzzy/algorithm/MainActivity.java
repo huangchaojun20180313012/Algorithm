@@ -70,7 +70,7 @@ public class MainActivity <T extends Comparable <? super T>> extends AppCompatAc
                 }
                 swap(min,i);
             }
-            //---
+            //----
 
         }
     }
