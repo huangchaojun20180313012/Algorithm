@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import net.lzzy.algorithm.algorlib.DirectSort;
+import net.lzzy.algorithm.algorlib.insertSort;
+
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Random;
@@ -13,7 +16,7 @@ import java.util.Random;
 /**
  * @author Administrator
  */
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity <T extends Comparable <? super T>> extends AppCompatActivity implements View.OnClickListener {
     private Integer[] items;
     private EditText edtItems;
     private TextView tvResult;
@@ -36,8 +39,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 displayItems(edtItems);
                 break;
             case R.id.activity_main_btn_sort:
-                insertSort();
-                displayItems(tvResult);
+                insertSort<Integer> sort=new insertSort<>(items);
+                sort.sortwithtime();
+               String result=sort.getconut();
+               tvResult.setText(result);
                 break;
             default:
                 break;
