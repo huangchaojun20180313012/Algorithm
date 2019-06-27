@@ -8,7 +8,7 @@ public class DrirectSearch<T extends Comparable<? super T>> extends BaseSearch<T
     DrirectSearch(T[] items) {
         super(items);
     }
-
+    //--
     @Override
     public int search(T key) {
         long start=System.currentTimeMillis();

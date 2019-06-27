@@ -9,6 +9,7 @@ public class SortFactory {
         BaseSort<T> sort;
         switch (key){
             case 0:
+                //--
                 sort=new DirectSort<>(items);
                 break;
             case 1:

@@ -9,6 +9,7 @@ public class SortFactory2 {
         BaseSearch<T> search = null;
         switch (key){
             case 0:
+                //--
                 search=new DrirectSearch<>(items);
                 break;
             case 1:

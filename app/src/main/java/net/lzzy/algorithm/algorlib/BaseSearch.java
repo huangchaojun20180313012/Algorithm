@@ -18,6 +18,7 @@ public abstract class BaseSearch <T extends Comparable<? super T>> {
         compareCount++;
         return a.compareTo(b);
     }
+    //--
 
     //========================================
     BaseSearch(){}

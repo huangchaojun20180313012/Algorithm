@@ -7,7 +7,7 @@ package net.lzzy.algorithm.algorlib;
 public class DirectSort<T extends Comparable<? super T>> extends BaseSort< T > {
 
 
-
+//--
 
     public DirectSort(T[] item){
         super(item);

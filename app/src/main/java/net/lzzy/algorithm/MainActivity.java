@@ -31,6 +31,7 @@ import javax.crypto.SecretKeyFactory;
 /**
  * @author Administrator
  */
+//--//--
 public class MainActivity <T extends Comparable <? super T>> extends AppCompatActivity implements View.OnClickListener {
     private Integer[] items;
     private EditText edtItems;

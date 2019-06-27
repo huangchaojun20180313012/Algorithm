@@ -8,7 +8,7 @@ public class BinarySearch <T extends Comparable<? super T>> extends BaseSearch<T
     public BinarySearch(T[] items) {
         super(items);
     }
-
+    //--
     @Override
     public int search(T key) {
         long start=System.currentTimeMillis();

@@ -4,6 +4,7 @@ package net.lzzy.algorithm.algorlib;
  * Created by lzzy_gxy on 2019/6/15.
  * Description:
  */
+//--
 public abstract class BaseSort <T extends Comparable<? super T>>{
     T[] items;
     private long duration;
