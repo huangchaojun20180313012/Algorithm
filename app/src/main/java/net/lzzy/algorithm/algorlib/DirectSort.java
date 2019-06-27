@@ -16,7 +16,7 @@ public class DirectSort<T extends Comparable<? super T>> extends BaseSort< T > {
     @Override
     public void Sort() {
 
-        for (int i=0;i<items.length-1;i++){
+        for (int i=1;i<items.length;i++){
             int minPos=i;
             for(int j=i+1;j<items.length;j++){
 //               items[minPos].compareTo(items[j])>0

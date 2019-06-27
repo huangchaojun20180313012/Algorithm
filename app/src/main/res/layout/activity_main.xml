@@ -24,17 +24,46 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button
-            android:id="@+id/activity_main_btn_generate"
+        <Spinner
+            android:id="@+id/sp"
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+        <Button
+            android:id="@+id/activity_main_btn_generate"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="生成排序数"/>
         <Button
             android:id="@+id/activity_main_btn_sort"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="排序"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        tools:ignore="Orientation"></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/sp2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="132dp"
+            android:layout_height="59dp"
+            android:text="生成查找数组" />
     </LinearLayout>
 </LinearLayout>
