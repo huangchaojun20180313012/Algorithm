@@ -80,7 +80,10 @@ private  void  initSearch(){
 private  void resetSearch(){
     container.removeAllViews();
     generateItems();
-    btnSort.callOnClick();
+   if (spSearch.getSelectedItemPosition()==1){
+       btnSort.callOnClick();
+   }
+
     for (Integer i:items){
         Button btn=new Button(this);
         btn.setText(String.format(i.toString(), Locale.CHINA));
