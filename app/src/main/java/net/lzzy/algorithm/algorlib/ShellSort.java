@@ -8,7 +8,7 @@ public class ShellSort <T extends Comparable<? super T>>extends BaseSort<T> {
      ShellSort(T[] items) {
         super(items);
     }
-    //--
+    //----
     @Override
     void Sort() {
     int len=items.length;
