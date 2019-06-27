@@ -10,7 +10,7 @@ public class SortFactory2 {
         switch (key){
             case 0:
                 search=new DrirectSearch<>(items);
-                break;
+                break;//---
             case 1:
               search= new BinarySearch<>(items);
                 break;
